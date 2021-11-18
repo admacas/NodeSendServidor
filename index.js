@@ -9,10 +9,11 @@ const app = express();
 conectarDB();
 
 // habilitar cors
-const opcionesCors = {
-    origin: process.env.FRONTEND_URL
-}
-app.use(cors(opcionesCors));
+// const opcionesCors = {
+//     origin: process.env.FRONTEND_URL
+// }
+// app.use(cors(opcionesCors));
+app.use(cors());
 
 console.log('Comenzando NodeSend');
 // puerto de la app
